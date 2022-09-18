@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(Backgrounds/Abstract_linear.jpg);
+  background-position: center;
+  background-size: cover;
+  /*padding-left: 8%;
+    padding-right: 8%;*/
+  box-sizing: border-box;
+}
+
+.navbar {
+  /*height: 25%;
+  display: flex;
+  align-items: center;
+  margin-right: 4%;
+  margin-left: 3%;*/
+  /*
+  height: 17%;
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+*/
+  height: 17%;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  cursor: pointer;
+  margin-left: 2%;
+}
+
+.menu-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-right: 3%;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-flex;
+  margin-right: 15%;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 60px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+/*------------------Main-Texts--------------------*/
+
+.text {
+  display: inline-flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 7%;
+  color: white;
+  margin-top: 3%;
+}
+
+.Main-text {
+  font-size: 529%;
+}
+
+.bottom-col {
+  font-size: 111%;
+  margin-top: 1%;
+}
+/*-----------------Main-Texts-end---------------------*/
+/*-----------------Button----------------------*/
+.Learn-button {
+  width: 128px;
+  background-color: white;
+  color: blue;
+  font-size: 14px;
+  padding: 12px 0;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 3%;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+
+.Learn-button:hover {
+  color: white;
+  background-color: rgba(87, 149, 241, 0.644);
+  /*background-color: rgba(255, 255, 255, 0.829);*/
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.Learn-button:active {
+  opacity: 0.6;
+}
+
+/*--------------------Button-end----------------------*/
+
+/*--------------------SignUp-Form----------------------*/
+
+.signup-form {
+  text-align: center;
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  width: 400px;
+  height: 465px;
+  background: white;
+  border-radius: 10px;
+}
+
+.Signup-Main-Text {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  border-bottom: 1px solid silver;
+}
+
+.signup-form form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt-field {
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+.txt-field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt-field label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.txt-field span::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: 0.5s;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label {
+  top: -5px;
+  color: #2691d9;
+}
+
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before {
+  width: 100%;
+}
+
+.SignUp-button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  background: #2691d9;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #e9f4fb;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.2s;
+}
+
+.SignUp-button:hover {
+  color: white;
+  background-color: rgba(38, 145, 217, 0.9);
+  /*background-color: rgba(255, 255, 255, 0.829);*/
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.SignUp-button:active {
+  opacity: 0.7;
+}
+
+.login-link {
+  margin-top: 10px;
+}
+
+/*--------------------SignUp-Form-end------------------*/
+
+.footer-background {
+  height: 75px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 90%;
+  text-align: center;
+}
+
+/*---------------------Waves-------------------------*/
+.waves {
+  position: absolute;
+  bottom: -58px;
+  pointer-events: none;
+}
+
+.footer-wave {
+  position: absolute;
+  bottom: -45px;
+  pointer-events: none;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0px;
+  pointer-events: none;
+}
+
+/*********************************************************************************/
+
+.footer {
+  background-color: white;
+  font-family: "Segoe UI";
+  font-weight: 400;
+  margin-top: -5px;
+  padding-bottom: 15px;
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  color: #4b4c4d;
+}
+
+.footer .social a {
+  font-size: 24px;
+  color: inherit;
+  border: 1ps solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 8px;
+  opacity: 0.75;
+}
+
+.footer .social a:hover {
+  opacity: 0.9;
+}
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a:hover {
+  opacity: 1;
+}
+.footer .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
